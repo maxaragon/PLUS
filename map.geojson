@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7cccc5a5b9bae63bf5901b8b1351e31e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7cccc5a5b9bae63bf5901b8b1351e31e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7cccc5a5b9bae63bf5901b8b1351e31e = L.map(
+                "map_7cccc5a5b9bae63bf5901b8b1351e31e",
+                {
+                    center: [52.41422727272727, 11.620136363636362],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7377e482c31a25fdd4d5eecaeeacf0df = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_7cccc5a5b9bae63bf5901b8b1351e31e);
+        
+    
+
+        function geo_json_24215f6796b8c295392484a9b458fb85_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_24215f6796b8c295392484a9b458fb85 = L.geoJson(null, {
+                onEachFeature: geo_json_24215f6796b8c295392484a9b458fb85_onEachFeature,
+            
+        });
+
+        function geo_json_24215f6796b8c295392484a9b458fb85_add (data) {
+            geo_json_24215f6796b8c295392484a9b458fb85
+                .addData(data)
+                .addTo(map_7cccc5a5b9bae63bf5901b8b1351e31e);
+        }
+            geo_json_24215f6796b8c295392484a9b458fb85_add({"features": [{"geometry": {"coordinates": [26.029, 44.348], "type": "Point"}, "id": "0", "properties": {"actrisId": 99.0, "altitude": 93, "country": "Romania", "countryCode": "RO", "countrySubdivisionCode": null, "dvasId": "INO", "gaw": "INO", "humanReadableName": "Bucharest", "id": "bucharest", "latitude": 44.348, "longitude": 26.029, "type": ["cloudnet"]}, "type": "Feature"}, {"geometry": {"coordinates": [4.927, 51.968], "type": "Point"}, "id": "1", "properties": {"actrisId": 88.0, "altitude": -1, "country": "Netherlands", "countryCode": "NL", "countrySubdivisionCode": null, "dvasId": "CBW", "gaw": "CBW", "humanReadableName": "Cabauw", "id": "cabauw", "latitude": 51.968, "longitude": 4.927, "type": ["cloudnet"]}, "type": "Feature"}, {"geometry": {"coordinates": [-1.439, 51.144], "type": "Point"}, "id": "2", "properties": {"actrisId": 123.0, "altitude": 85, "country": "United Kingdom", "countryCode": "GB", "countrySubdivisionCode": "GB-ENG", "dvasId": "CHI", "gaw": null, "humanReadableName": "Chilbolton", "id": "chilbolton", "latitude": 51.144, "longitude": -1.439, "type": ["cloudnet"]}, "type": "Feature"}, {"geometry": {"coordinates": [4.379, 51.996], "type": "Point"}, "id": "3", "properties": {"actrisId": null, "altitude": -4, "country": "Netherlands", "countryCode": "NL", "countrySubdivisionCode": null, "dvasId": "DEL", "gaw": null, "humanReadableName": "Delft", "id": "delft", "latitude": 51.996, "longitude": 4.379, "type": ["cloudnet"]}, "type": "Feature"}, {"geometry": {"coordinates": [28.037, 45.435], "type": "Point"}, "id": "4", "properties": {"actrisId": 102.0, "altitude": 40, "country": "Romania", "countryCode": "RO", "countrySubdivisionCode": null, "dvasId": "GAL", "gaw": null, "humanReadableName": "Gala\u021bi", "id": "galati", "latitude": 45.435, "longitude": 28.037, "type": ["cloudnet"]}, "type": "Feature"}, {"geometry": {"coordinates": [-3.605, 37.164], "type": "Point"}, "id": "5", "properties": {"actrisId": 110.0, "altitude": 680, "country": "Spain", "countryCode": "ES", "countrySubdivisionCode": null, "dvasId": "GRA", "gaw": "UGR", "humanReadableName": "Granada", "id": "granada", "latitude": 37.164, "longitude": -3.605, "type": ["cloudnet"]}, "type": "Feature"}, {"geometry": {"coordinates": [24.288, 61.844], "type": "Point"}, "id": "6", "properties": {"actrisId": 23.0, "altitude": 174, "country": "Finland", "countryCode": "FI", "countrySubdivisionCode": null, "dvasId": "SMR", "gaw": "SMR", "humanReadableName": "Hyyti\u00e4l\u00e4", "id": "hyytiala", "latitude": 61.844, "longitude": 24.288, "type": ["cloudnet"]}, "type": "Feature"}, {"geometry": {"coordinates": [6.407, 50.906], "type": "Point"}, "id": "7", "properties": {"actrisId": 48.0, "altitude": 108, "country": "Germany", "countryCode": "DE", "countrySubdivisionCode": null, "dvasId": "JUE", "gaw": "JUE", "humanReadableName": "J\u00fclich", "id": "juelich", "latitude": 50.906, "longitude": 6.407, "type": ["cloudnet"]}, "type": "Feature"}, {"geometry": {"coordinates": [24.243, 67.988], "type": "Point"}, "id": "8", "properties": {"actrisId": 26.0, "altitude": 342, "country": "Finland", "countryCode": "FI", "countrySubdivisionCode": null, "dvasId": "KEN", "gaw": null, "humanReadableName": "Kentt\u00e4rova", "id": "kenttarova", "latitude": 67.988, "longitude": 24.243, "type": ["cloudnet"]}, "type": "Feature"}, {"geometry": {"coordinates": [12.435, 51.353], "type": "Point"}, "id": "9", "properties": {"actrisId": 64.0, "altitude": 126, "country": "Germany", "countryCode": "DE", "countrySubdivisionCode": null, "dvasId": "LEI", "gaw": "LEI", "humanReadableName": "Leipzig", "id": "leipzig", "latitude": 51.353, "longitude": 12.435, "type": ["cloudnet"]}, "type": "Feature"}, {"geometry": {"coordinates": [12.389, 51.333], "type": "Point"}, "id": "10", "properties": {"actrisId": null, "altitude": 126, "country": "Germany", "countryCode": "DE", "countrySubdivisionCode": null, "dvasId": "LEL", "gaw": null, "humanReadableName": "Leipzig LIM", "id": "leipzig-lim", "latitude": 51.333, "longitude": 12.389, "type": ["cloudnet"]}, "type": "Feature"}, {"geometry": {"coordinates": [14.118, 52.208], "type": "Point"}, "id": "11", "properties": {"actrisId": 49.0, "altitude": 104, "country": "Germany", "countryCode": "DE", "countrySubdivisionCode": null, "dvasId": "LIN", "gaw": "LIN", "humanReadableName": "Lindenberg", "id": "lindenberg", "latitude": 52.208, "longitude": 14.118, "type": ["cloudnet"]}, "type": "Feature"}, {"geometry": {"coordinates": [6.21, 53.24], "type": "Point"}, "id": "12", "properties": {"actrisId": null, "altitude": 1, "country": "Netherlands", "countryCode": "NL", "countrySubdivisionCode": null, "dvasId": "LUT", "gaw": null, "humanReadableName": "Lutjewad", "id": "lutjewad", "latitude": 53.24, "longitude": 6.21, "type": ["cloudnet"]}, "type": "Feature"}, {"geometry": {"coordinates": [-9.9, 53.326], "type": "Point"}, "id": "13", "properties": {"actrisId": null, "altitude": 16, "country": "Ireland", "countryCode": "IE", "countrySubdivisionCode": null, "dvasId": "MHD", "gaw": "MHD", "humanReadableName": "Mace Head", "id": "mace-head", "latitude": 53.326, "longitude": -9.9, "type": ["cloudnet"]}, "type": "Feature"}, {"geometry": {"coordinates": [11.573, 48.148], "type": "Point"}, "id": "14", "properties": {"actrisId": 51.0, "altitude": 538, "country": "Germany", "countryCode": "DE", "countrySubdivisionCode": null, "dvasId": "MUN", "gaw": null, "humanReadableName": "Munich", "id": "munich", "latitude": 48.148, "longitude": 11.573, "type": ["cloudnet"]}, "type": "Feature"}, {"geometry": {"coordinates": [17.479, 60.086], "type": "Point"}, "id": "15", "properties": {"actrisId": null, "altitude": 46, "country": "Sweden", "countryCode": "SE", "countrySubdivisionCode": null, "dvasId": "NOR", "gaw": "NOR", "humanReadableName": "Norunda", "id": "norunda", "latitude": 60.086, "longitude": 17.479, "type": ["cloudnet"]}, "type": "Feature"}, {"geometry": {"coordinates": [11.87, 78.924], "type": "Point"}, "id": "16", "properties": {"actrisId": null, "altitude": 25, "country": "Norway (Svalbard)", "countryCode": "SJ", "countrySubdivisionCode": "NO-21", "dvasId": "NYA", "gaw": "NYA", "humanReadableName": "Ny-\u00c5lesund", "id": "ny-alesund", "latitude": 78.924, "longitude": 11.87, "type": ["cloudnet"]}, "type": "Feature"}, {"geometry": {"coordinates": [2.212, 48.716], "type": "Point"}, "id": "17", "properties": {"actrisId": 37.0, "altitude": 156, "country": "France", "countryCode": "FR", "countrySubdivisionCode": null, "dvasId": "SIR", "gaw": null, "humanReadableName": "Palaiseau", "id": "palaiseau", "latitude": 48.716, "longitude": 2.212, "type": ["cloudnet"]}, "type": "Feature"}, {"geometry": {"coordinates": [15.724, 40.601], "type": "Point"}, "id": "18", "properties": {"actrisId": 78.0, "altitude": 760, "country": "Italy", "countryCode": "IT", "countrySubdivisionCode": null, "dvasId": "POT", "gaw": "POT", "humanReadableName": "Potenza", "id": "potenza", "latitude": 40.601, "longitude": 15.724, "type": ["cloudnet"]}, "type": "Feature"}, {"geometry": {"coordinates": [16.31, 52.758], "type": "Point"}, "id": "19", "properties": {"actrisId": null, "altitude": 57, "country": "Poland", "countryCode": null, "countrySubdivisionCode": null, "dvasId": null, "gaw": null, "humanReadableName": "Rzecin", "id": "rzecin", "latitude": 52.758, "longitude": 16.31, "type": ["cloudnet"]}, "type": "Feature"}, {"geometry": {"coordinates": [10.977, 47.417], "type": "Point"}, "id": "20", "properties": {"actrisId": null, "altitude": 2653, "country": "Germany", "countryCode": "DE", "countrySubdivisionCode": null, "dvasId": "ZSF", "gaw": "ZSF", "humanReadableName": "Schneefernerhaus", "id": "schneefernerhaus", "latitude": 47.417, "longitude": 10.977, "type": ["cloudnet"]}, "type": "Feature"}, {"geometry": {"coordinates": [20.98, 52.21], "type": "Point"}, "id": "21", "properties": {"actrisId": null, "altitude": 112, "country": "Poland", "countryCode": null, "countrySubdivisionCode": null, "dvasId": null, "gaw": null, "humanReadableName": "Warsaw", "id": "warsaw", "latitude": 52.21, "longitude": 20.98, "type": ["cloudnet"]}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+</script>
+</html>
